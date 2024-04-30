@@ -7,35 +7,35 @@
     <link rel="stylesheet" href="styles/output.css">
     <title>Room homepage</title>
 </head>
-<body class="">
+<body>
     <div class="w-full">
-        <header class="absolute">
-            <img src="img/icon-hamburger.svg" alt="menu" class="">
+        <header class="absolute flex items-center pt-12 pl-12 gap-8">
+            <img src="img/icon-hamburger.svg" alt="menu" class="hidden">
             <img src="img/logo.svg" alt="logo">
-            <ul>
+            <ul class="flex font-bold text-slate-50 gap-6">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Shop</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </header>
-        <main class="">
+        <main>
             <div class="flex h-3/5">
                 <div class="w-3/5">
                     <img src="img/desktop-image-hero-1.jpg" alt="img" class="w-full">
                 </div>
-                <div class="w-2/5">
-                    <h1>Discover innovative ways to decorate</h1>
-                    <p>
+                <div class="relative w-2/5 p-20 flex flex-col justify-evenly">
+                    <h1 class="font-bold text-5xl font-spartan">Discover innovative ways to decorate</h1>
+                    <p class="text-[#a1a1a1]">
                         We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.
                     </p>
-                    <span>
+                    <span class="uppercase font-bold flex items-center gap-4 tracking-[1rem]">
                         Shop now 
                         <img src="img/icon-arrow.svg" alt="arrow">
                     </span>
-                    <div>
-                        <button><img src="img/icon-angle-left.svg" alt=""></button>
-                        <button><img src="img/icon-angle-right.svg" alt=""></button>
+                    <div class="absolute left-0 bottom-0 flex">
+                        <button class="bg-black w-20 h-20 flex justify-center items-center"><img src="img/icon-angle-left.svg" alt="left"></button>
+                        <button class="bg-black w-20 h-20 flex justify-center items-center"><img src="img/icon-angle-right.svg" alt="rigth"></button>
                     </div>
                 </div>
             </div>
