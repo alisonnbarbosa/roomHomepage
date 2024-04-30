@@ -13,10 +13,10 @@
             <img src="img/icon-hamburger.svg" alt="menu" class="hidden">
             <img src="img/logo.svg" alt="logo">
             <ul class="flex font-bold text-slate-50 gap-6">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="relative before:content-[''] hover:before:absolute before:h-[5px] before:w-full before:top-8 before:bg-white duration-150 before:rounded-sm"><a href="#">Home</a></li>
+                <li class="relative before:content-[''] hover:before:absolute before:h-[5px] before:w-full before:top-8 before:bg-white duration-150 before:rounded-sm"><a href="#">Shop</a></li>
+                <li class="relative before:content-[''] hover:before:absolute before:h-[5px] before:w-full before:top-8 before:bg-white duration-150 before:rounded-sm"><a href="#">About</a></li>
+                <li class="relative before:content-[''] hover:before:absolute before:h-[5px] before:w-full before:top-8 before:bg-white duration-150 before:rounded-sm"><a href="#">Contact</a></li>
             </ul>
         </header>
         <main>
@@ -29,13 +29,13 @@
                     <p class="text-[#a1a1a1]">
                         We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.
                     </p>
-                    <span class="uppercase font-bold flex items-center gap-4 tracking-[1rem]">
+                    <a href="#" class="uppercase font-bold flex items-center gap-4 tracking-[1rem] hover:text-[#a1a1a1]">
                         Shop now 
-                        <img src="img/icon-arrow.svg" alt="arrow">
-                    </span>
+                        <img src="img/icon-arrow.svg" alt="arrow" class="aaa">
+                    </a>
                     <div class="absolute left-0 bottom-0 flex">
-                        <button class="bg-black w-20 h-20 flex justify-center items-center"><img src="img/icon-angle-left.svg" alt="left"></button>
-                        <button class="bg-black w-20 h-20 flex justify-center items-center"><img src="img/icon-angle-right.svg" alt="rigth"></button>
+                        <button class="bg-black w-20 h-20 flex justify-center items-center hover:bg-[#454545] duration-150"><img src="img/icon-angle-left.svg" alt="left"></button>
+                        <button class="bg-black w-20 h-20 flex justify-center items-center hover:bg-[#454545] duration-150"><img src="img/icon-angle-right.svg" alt="rigth"></button>
                     </div>
                 </div>
             </div>
