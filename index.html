@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/output.css">
+    <script src="js/script.js" defer></script>
     <title>Room homepage</title>
 </head>
 <body>
@@ -22,7 +23,7 @@
         <main>
             <div class="flex h-3/5">
                 <div class="w-3/5">
-                    <img src="img/desktop-image-hero-1.jpg" alt="img" class="w-full">
+                    <img src="img/desktop-image-hero-1.jpg" alt="img" class="w-full" id="img">
                 </div>
                 <div class="relative w-2/5 p-20 flex flex-col justify-evenly">
                     <h1 class="font-bold text-5xl font-spartan">Discover innovative ways to decorate</h1>
@@ -34,8 +35,8 @@
                         <img src="img/icon-arrow.svg" alt="arrow" class="aaa">
                     </a>
                     <div class="absolute left-0 bottom-0 flex">
-                        <button class="bg-black w-20 h-20 flex justify-center items-center hover:bg-[#454545] duration-150"><img src="img/icon-angle-left.svg" alt="left"></button>
-                        <button class="bg-black w-20 h-20 flex justify-center items-center hover:bg-[#454545] duration-150"><img src="img/icon-angle-right.svg" alt="rigth"></button>
+                        <button class="bg-black w-20 h-20 flex justify-center items-center hover:bg-[#454545] duration-150" id="btleft"><img src="img/icon-angle-left.svg" alt="left"></button>
+                        <button class="bg-black w-20 h-20 flex justify-center items-center hover:bg-[#454545] duration-150" id="btright"><img src="img/icon-angle-right.svg" alt="right"></button>
                     </div>
                 </div>
             </div>
