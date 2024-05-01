@@ -38,3 +38,13 @@ const trocarTextos = (num)=> {
     }
 }
 trocarTextos(contador)
+
+/*menu responsivo*/
+const navBar = document.getElementById('navBar')
+
+document.getElementById('btMenu').addEventListener('click', ()=>{
+    navBar.style.display = 'flex'
+})
+document.getElementById('btClose').addEventListener('click', ()=>{
+    navBar.style.display = 'none'
+})

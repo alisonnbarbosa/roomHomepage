@@ -11,10 +11,11 @@
 <body>
     <div class="w-full">
         <header class="absolute flex items-center justify-center pt-12 pl-12 gap-8">
-            <button><img src="img/icon-hamburger.svg" alt="menu" class=""></button>
+            <button id="btMenu" class="sm:hidden"><img src="img/icon-hamburger.svg" alt="menu"></button>
             <img src="img/logo.svg" alt="logo">
-            <nav class="hidden">
-                <ul class="flex font-bold text-slate-50 gap-6">
+            <nav class="max-sm:fixed top-0 right-0 max-sm:bg-white max-sm:w-full max-sm:h-32 items-center justify-around max-sm:hidden" id="navBar">
+                <button id="btClose" class="sm:hidden w-6 h-6"><img src="img/icon-close.svg" alt="close" class="w-full h-full"></button>
+                <ul class="flex font-bold sm:text-slate-50 gap-6">
                     <li class="relative before:content-[''] hover:before:absolute before:h-[5px] before:w-full before:top-8 before:bg-white duration-150 before:rounded-sm"><a href="#">Home</a></li>
                     <li class="relative before:content-[''] hover:before:absolute before:h-[5px] before:w-full before:top-8 before:bg-white duration-150 before:rounded-sm"><a href="#">Shop</a></li>
                     <li class="relative before:content-[''] hover:before:absolute before:h-[5px] before:w-full before:top-8 before:bg-white duration-150 before:rounded-sm"><a href="#">About</a></li>
@@ -22,7 +23,7 @@
                 </ul>
             </nav>
         </header>
-        <main class="">
+        <main>
             <div class="flex sm:h-3/5 max-sm:flex-col">
                 <div class="sm:w-3/5">
                     <picture>
