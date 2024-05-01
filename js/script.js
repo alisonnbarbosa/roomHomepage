@@ -1,6 +1,7 @@
 const btleft = document.getElementById('btleft')
 const btright = document.getElementById('btright')
 const img = document.getElementById('img')
+const imgMobile = document.getElementById('imgMobile')
 let contador = 1; 
 
 const trocarImagem = (num)=>{
@@ -11,7 +12,12 @@ const trocarImagem = (num)=>{
     } else if(contador < 1){
         contador=3
     }
-    img.src = `img/desktop-image-hero-${contador}.jpg`
+
+    if(window.innerWidth > 639){
+        img.src = `img/desktop-image-hero-${contador}.jpg`
+    } else {
+        img.src = `img/mobile-image-hero-${contador}.jpg`
+    }
 
     trocarTextos(contador)
 }
@@ -20,7 +26,6 @@ btleft.addEventListener('click', ()=> trocarImagem(-1))
 btright.addEventListener('click', ()=> trocarImagem(1))
 
 /*troca o conteúdo dos textos do site*/
-
 const h1 = document.getElementById('h1')
 const p = document.getElementById('p')//parágrafo
 
